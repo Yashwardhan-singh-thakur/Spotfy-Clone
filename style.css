@@ -5,9 +5,13 @@
   --hover-bg-color: #2c2c2c;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background-color: black;
   box-sizing: content-box;
   color: var(--text-color);
@@ -181,7 +185,7 @@ body {
 
 /* side bar style */
 .sideBar {
-  width: 32vw;
+  width: 28.62vw;
   height: 78vh;
   background-color: #121212;
   border-radius: 0.5rem;
@@ -259,16 +263,21 @@ body {
 }
 
 .libraryPlaylist div h4 {
-  color: white;
+  font-size: 0.99rem;
+  color: #fefefe;
   margin: 0%;
   padding: 0%;
   margin-left: 1rem;
+  margin-bottom: 0.75rem;
   padding-top: 0.75rem;
 }
 
 .libraryPlaylist div p {
-  color: var(--text-color);
+  color: #dedede;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
   margin-left: 1rem;
+  font-size: 0.9rem;
 }
 
 .libraryPlaylist div button {
@@ -293,11 +302,170 @@ body {
 
 /* main content and cards */
 .main-content {
-  background-color: #1f1f1f;
-  width: 68vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* background-color: ; */
+  background: rgb(0, 0, 0);
+
+  background: linear-gradient(to bottom, #1f1f1f, #121212);
+  scrollbar-width: large;
+  scrollbar-color: transparent transparent;
+  scroll-behavior: auto;
   height: 78vh;
   border-radius: 0.5rem;
   margin-right: 0.5rem;
+  transition: all 1s steps(1);
+}
+
+.main-content:hover {
+  scrollbar-color: #888 transparent;
+  transition: all 0.1s steps(1);
+}
+
+.card-container {
+  margin-inline: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardhead {
+  margin-inline: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardhead h2 {
+  color: white;
+}
+
+.cardhead span {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cardhead h2:hover,
+.cardhead span:hover {
+  text-decoration: underline;
+}
+
+.card-display-con {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 0.4rem;
+  height: 17rem;
+}
+
+.card:hover {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(to bottom, #222222, #2c2c2c);
+}
+
+.card img {
+  height: 10.5rem;
+  width: 10.5rem;
+  border-radius: 0.4rem;
+  margin: 0.5rem;
+}
+
+.card h4 {
+  color: #f1f1f1;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.card h4,
+.card p {
+  margin-inline: 0.6rem;
+}
+
+.card h4:hover,
+.card p:hover {
+  text-decoration: underline;
+}
+
+/* footer styling */
+.footer-con {
+  padding-block: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-con ul {
+  list-style-type: none;
+}
+
+.footer-con ul li {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  font-weight: 550;
+  color: #a7a7a7;
+}
+
+.footer-con ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #dfdcdc;
+}
+
+.footer-con ul .list-head {
+  font-weight: 600;
+  color: #f1f1f1;
+}
+.footer-con ul .list-head:hover {
+  cursor: auto;
+  text-decoration: none;
+}
+
+.footer-con .social-link i {
+  color: white;
+  font-size: 1.1rem;
+  background-color: #292929;
+  height: 2.6rem;
+  width: 2.6rem;
+  text-align: center;
+  line-height: 2.7rem;
+  border-radius: 50%;
+  margin: 0.2rem;
+}
+
+.footer-con .social-link i:hover {
+  background-color: #555454;
+}
+
+.footer-con2 {
+  padding: 2rem 0 5.5rem 0;
+  border-top: 1px solid rgba(105, 104, 104, 0.301);
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 1.75rem;
+}
+
+.footer-con2 ul {
+  color: #b3b3b3;
+  list-style-type: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer-con2 span,
+.footer-con2 ul {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.footer-con2 ul li:hover {
+  color: #e6e6e6;
+  cursor: pointer;
 }
 
 .play-bar {
