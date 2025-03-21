@@ -81,7 +81,8 @@ body {
   border: 1px solid transparent;
   display: flex;
   align-items: center;
-  margin-inline: 0.5rem;
+  margin-right: 2.5rem;
+  margin-left: 0.5rem;
   background-color: var(--bg-color);
   border-radius: 2rem;
   width: 29rem;
@@ -101,6 +102,7 @@ body {
 .search-con button {
   visibility: hidden;
   position: absolute;
+  padding-inline: 0.5rem;
   height: 1.7rem;
   font-size: 1rem;
   line-height: 1.7rem;
@@ -359,10 +361,38 @@ body {
 .card {
   border-radius: 0.4rem;
   height: 17rem;
+  position: relative;
+}
+
+.card i {
+  padding: 0.95rem 1.2rem 0.95rem 1.2rem;
+  border-radius: 50%;
+  align-items: center;
+  font-size: 1.25rem;
+  position: absolute;
+  right: 1rem;
+  top: 48%;
+  transform: scale(1);
+  cursor: pointer;
+  visibility: hidden;
+  transition: all 0.2s ease-in;
+  color: black;
+}
+
+.card i:hover {
+  transform: scale(1.02);
+  background-color: #00f164ea;
+}
+
+.card:hover i {
+  transition: all 0.2s ease-in;
+  visibility: visible;
+  background-color: #00f165;
+  top: 44%;
 }
 
 .artist-card {
-  height: 15.5rem;
+  height: 16.5rem;
 }
 
 .card:hover {
@@ -384,11 +414,14 @@ body {
 .card h4 {
   color: #f1f1f1;
   margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  width: 10.3rem;
 }
 
 .card p {
   font-size: 0.9rem;
   font-weight: 500;
+  width: 10.3rem;
 }
 
 .card h4,
