@@ -238,7 +238,7 @@ body {
 /* scrool bar styles */
 .libraryPlaylist {
   overflow-y: auto;
-  height: 15rem;
+  /* height: 15rem; */
   position: relative;
   scrollbar-width: large;
   scrollbar-color: transparent transparent;
@@ -324,7 +324,7 @@ body {
 
 .card-container {
   margin-inline: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -361,6 +361,10 @@ body {
   height: 17rem;
 }
 
+.artist-card {
+  height: 15.5rem;
+}
+
 .card:hover {
   background: rgb(0, 0, 0);
   background: linear-gradient(to bottom, #222222, #2c2c2c);
@@ -371,6 +375,10 @@ body {
   width: 10.5rem;
   border-radius: 0.4rem;
   margin: 0.5rem;
+}
+
+.card .circleImg {
+  border-radius: 50%;
 }
 
 .card h4 {
@@ -468,10 +476,150 @@ body {
   cursor: pointer;
 }
 
-.play-bar {
+/* playbar styling */
+.playbar-con {
   background-color: black;
   position: absolute;
   bottom: 0;
   height: 12vh;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* 
+.playbar-con div {
+  border: 1px solid green;
+} */
+
+.album,
+.controls {
+  width: 30vw;
+}
+
+.album {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.album > img {
+  width: 3.5rem;
+  border-radius: 0.3rem;
+}
+
+.album div p {
+  margin-bottom: 0.15rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #d4d2d2;
+}
+
+.album div p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.album div p small {
+  color: gray;
+  font-weight: 560;
+}
+.album div p small:hover {
+  color: #d4d2d2;
+  font-weight: 560;
+}
+
+.album .imgIcon {
+  width: 1.25rem;
+  opacity: 0.75;
+  transform: scale(1);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.album .imgIcon:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.playbar .play-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.playbar .play-icons i {
+  font-size: 1.1rem;
+  transform: scale(1);
+}
+
+.arrow {
+  width: 2rem;
+  opacity: 0.75;
+}
+
+.arrow:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.playbar .play-icons i:hover {
+  transform: scale(1.025);
+  color: white;
+}
+
+.playbar .play-icons .fa-circle-play {
+  font-size: 2.1rem;
+  color: white;
+}
+
+.fa-backward-step,
+.fa-forward-step {
+  color: #c4c4c4;
+}
+
+.play-range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.play-range input {
+  text-align: center;
+  width: 25rem;
+}
+
+.play-range {
+  font-size: 0.85rem;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls img {
+  width: 1.4rem;
+  opacity: 0.75;
+}
+
+.controls img:hover {
+  opacity: 1;
+}
+
+.controls i {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.controls i:hover {
+  opacity: 1;
 }
