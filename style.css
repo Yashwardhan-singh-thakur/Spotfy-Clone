@@ -440,7 +440,6 @@ body .expandStyle {
 .card-display-con {
   display: flex;
   flex-wrap: wrap;
-  overflow-x: scroll;
 }
 
 /* Card Styles */
