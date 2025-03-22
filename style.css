@@ -61,6 +61,59 @@ body {
   top: 0;
 }
 
+.navlogo {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: white;
+}
+
+.navlogo h1 sup {
+  font-size: 0.6rem;
+}
+
+.fa-magnifying-glass {
+  color: white;
+}
+
+#openAppBtn {
+  background-color: white;
+  color: black;
+  padding-inline: 1rem;
+  margin-inline: 1rem;
+}
+
+.fa-bars {
+  font-size: 2rem;
+  color: white;
+  position: sticky;
+}
+
+.expandBar {
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+  display: none;
+  transform: translate(100%);
+  position: sticky;
+  z-index: 1;
+  transition: all 0.1s ease-in-out;
+  .fa-x {
+    color: white;
+    font-size: 1.55rem;
+    margin-top: 1rem;
+    margin-left: 94%;
+    cursor: pointer;
+  }
+}
+
+body .expandStyle {
+  display: block;
+  transition: all 0.1s ease-in-out;
+  background-color: black;
+  transform: translate(0);
+}
+
 .fa-spotify {
   padding-left: var(--spacing-xl);
   font-size: var(--font-size-xxl);
@@ -68,7 +121,8 @@ body {
   cursor: pointer;
 }
 
-.navCon {
+.navCon,
+.responsiveCon {
   display: flex;
   gap: 1.85rem;
 }
@@ -800,5 +854,13 @@ input[type="range"]::-webkit-slider-thumb {
   .footer-con2 span {
     padding: 0;
     padding-block: 1rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .navSearchPanel,
+  .bellIcon,
+  #userIcon {
+    display: none;
   }
 }
