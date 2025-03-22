@@ -4,13 +4,7 @@ let hiddenBtns = document.querySelectorAll(".search-con button");
 let expandBtn = document.querySelector(".fa-bars ");
 let expandableBar = document.querySelector(".expandBar");
 let contractBtn = document.querySelector(".fa-x");
-
-let expandableBarSlider = () => {
-  expandableBar.classList.toggle("expandStyle");
-};
-
-expandBtn.addEventListener("click", expandableBarSlider);
-contractBtn.addEventListener("click", expandableBarSlider);
+let navBar = document.querySelector("nav");
 
 searchInput.addEventListener("input", () => {
   if (this.value !== "") {
@@ -20,6 +14,13 @@ searchInput.addEventListener("input", () => {
     });
   }
 });
+
+let expandableBarSlider = () => {
+  expandableBar.classList.toggle("expandStyle");
+};
+
+expandBtn.addEventListener("click", expandableBarSlider);
+contractBtn.addEventListener("click", expandableBarSlider);
 
 // main.addEventListener("click", () => {
 //   if (!searchInput.value.length) {
