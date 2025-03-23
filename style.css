@@ -281,6 +281,7 @@ body .expandStyle {
   padding-block: 0.85rem;
   outline: none;
   border: none;
+  padding-left: 1cqh;
 }
 
 .fa-window-restore {
@@ -909,8 +910,25 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 @media (max-width: 399px) {
+  .main-content {
+    background: var(--bg-dark);
+  }
+
+  .card {
+    height: 16rem;
+  }
+
   .card img {
-    height: 10rem;
-    width: 10rem;
+    height: 9.2rem;
+    width: 9.2rem;
+  }
+
+  .artist-card {
+    height: 15.5rem;
+  }
+
+  .card h4,
+  .card p {
+    width: 9.2rem;
   }
 }
