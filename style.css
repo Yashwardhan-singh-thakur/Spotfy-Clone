@@ -578,7 +578,11 @@ aside .expandStyle {
   padding-left: 1rem;
 }
 
-.footer-con .social-link i {
+.footer-con .social-link a {
+  text-decoration: none;
+}
+
+.footer-con .social-link a i {
   color: white;
   font-size: 1.1rem;
   background-color: #292929;
@@ -590,7 +594,7 @@ aside .expandStyle {
   margin: 0.2rem;
 }
 
-.footer-con .social-link i:hover {
+.footer-con .social-link a i:hover {
   background-color: #555454;
 }
 
