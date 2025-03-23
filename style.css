@@ -65,10 +65,6 @@ body {
   cursor: pointer;
 }
 
-.navlogo h1 {
-  display: none;
-}
-
 .navlogo h1 sup {
   font-size: 0.6rem;
 }
@@ -815,9 +811,14 @@ input[type="range"]::-webkit-slider-thumb {
   border: none;
 }
 
+@media (max-width: 1110px) {
+  #PremiumBtn {
+    display: none;
+  }
+}
+
 @media (max-width: 1058px) {
   .play-range input {
-    /* width: 25rem; */
     width: 20rem;
   }
   .controls input {
@@ -836,12 +837,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 
-@media (max-width: 995px) {
-  #PremiumBtn {
-    display: none;
-  }
-}
-
 @media (max-width: 940px) {
   .controls {
     display: none;
@@ -855,7 +850,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 
-@media (max-width: 847px) {
+@media (max-width: 921px) {
   #installBtn {
     display: none;
   }
@@ -880,7 +875,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .navSearchPanel,
   .bellIcon,
   #userIcon {
@@ -890,8 +885,7 @@ input[type="range"]::-webkit-slider-thumb {
   #openAppBtn,
   .fa-bars,
   .res,
-  .brand-logo h1,
-  .navlogo h1 {
+  .brand-logo h1 {
     display: inline-block;
   }
 }
