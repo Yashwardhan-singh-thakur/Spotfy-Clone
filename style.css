@@ -937,10 +937,10 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   .main-content {
-    height: 65vh;
+    height: 66vh;
   }
 
   .playbar-con {
-    height: 20vh;
+    height: 21vh;
   }
 }
