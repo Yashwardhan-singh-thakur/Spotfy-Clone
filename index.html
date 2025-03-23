@@ -24,527 +24,544 @@
     <title>Spotify</title>
   </head>
   <body>
-    <div class="expandBar">
-      <p><i type="button" class="fa-solid fa-x"></i></p>
-      <div>
-        <h2>Log in</h2>
-        <h2>Sign up</h2>
-        <hr />
-        <ul>
-          <li>Premium</li>
-          <li>Help</li>
-          <li>Download</li>
-          <li>Privacy</li>
-          <li>Terms</li>
-        </ul>
-      </div>
-    </div>
-    <nav>
-      <div class="navBar">
-        <div class="navlogo">
-          <i class="fa-brands fa-spotify"></i>
-          <h1>Spotify<sup> &reg;</sup></h1>
+    <aside>
+      <div class="slider-expandBar">
+        <p><i type="button" class="fa-solid fa-x"></i></p>
+        <div>
+          <h2>Log in</h2>
+          <h2>Sign up</h2>
+          <hr />
+          <ul>
+            <li>Premium</li>
+            <li>Help</li>
+            <li>Download</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+          </ul>
         </div>
-        <div class="navCon">
-          <div class="navSearchPanel">
-            <a href=""><span class="material-symbols-outlined"> home </span></a>
-            <div class="search-con">
+      </div>
+    </aside>
+    <header>
+      <nav>
+        <div class="navBar">
+          <div class="navlogo">
+            <i class="fa-brands fa-spotify"></i>
+            <h1>Spotify<sup> &reg;</sup></h1>
+          </div>
+          <div class="navCon">
+            <div class="navSearchPanel">
+              <a href=""
+                ><span class="material-symbols-outlined"> home </span></a
+              >
+              <div class="search-con">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="What do you want to play?" />
+                <button disabled class="ctrlBtn">Ctrl</button>
+                <button disabled>K</button>
+                <i class="fa-solid fa-window-restore"></i>
+              </div>
+            </div>
+            <div class="navBtn">
+              <button id="PremiumBtn">Explore Premium</button>
+              <button id="installBtn">
+                <i class="fa-regular fa-circle-down"></i>Install app
+              </button>
+              <button class="bellIcon">
+                <i class="fa-regular fa-bell"></i>
+              </button>
+              <button id="userIcon"><i class="fa-solid fa-user"></i></button>
+
               <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="search" placeholder="What do you want to play?" />
-              <button disabled class="ctrlBtn">Ctrl</button>
-              <button disabled>K</button>
-              <i class="fa-solid fa-window-restore"></i>
+              <button id="openAppBtn">Open App</button>
+              <i type="button" class="fa-solid fa-bars"></i>
             </div>
           </div>
-          <div class="navBtn">
-            <button id="PremiumBtn">Explore Premium</button>
-            <button id="installBtn">
-              <i class="fa-regular fa-circle-down"></i>Install app
-            </button>
-            <button class="bellIcon"><i class="fa-regular fa-bell"></i></button>
-            <button id="userIcon"><i class="fa-solid fa-user"></i></button>
-
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <button id="openAppBtn">Open App</button>
-            <i type="button" class="fa-solid fa-bars"></i>
-          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
+
     <div class="main">
-      <div class="sideBar">
-        <div class="libraryConHead">
-          <button>
-            <img src="assets/library_icon.png" alt="library_icon" />Your Library
-          </button>
-          <div class="libraryIcons">
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-arrow-right"></i>
+      <nav>
+        <div class="sideBar">
+          <div class="libraryConHead">
+            <button>
+              <img src="assets/library_icon.png" alt="library_icon" />Your
+              Library
+            </button>
+            <div class="libraryIcons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="libraryPlaylist">
+            <div class="playlist">
+              <h4>Create your first playlist</h4>
+              <p>it's easy, we'll help you</p>
+              <button>Create playlist</button>
+            </div>
+            <div class="podcasts">
+              <h4>Let's find some podcasts to follow</h4>
+              <p>We'll keep you updated on new episodes</p>
+              <button>Browse podcasts</button>
+            </div>
           </div>
         </div>
-        <div class="libraryPlaylist">
-          <div class="playlist">
-            <h4>Create your first playlist</h4>
-            <p>it's easy, we'll help you</p>
-            <button>Create playlist</button>
-          </div>
-          <div class="podcasts">
-            <h4>Let's find some podcasts to follow</h4>
-            <p>We'll keep you updated on new episodes</p>
-            <button>Browse podcasts</button>
-          </div>
-        </div>
-      </div>
-
+      </nav>
       <div class="main-content">
-        <div class="card-container">
-          <div class="cardhead">
-            <h2>Trending Songs</h2>
-            <span>Show all</span>
+        <main>
+          <div class="card-container">
+            <div class="cardhead">
+              <h2>Trending Songs</h2>
+              <span>Show all</span>
+            </div>
+            <div class="card-display-con">
+              <div class="card">
+                <img
+                  src="https://imgs.search.brave.com/Cppt5prILDFj1RIuKFRJ0dA4sv0ifWkeGItyCnvIA1k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9uZW9u/bXVzaWMub25saW5l/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzAzL2FiNjc2MTZk/MDAwMGIyNzM4NmVi/NjFiZTU3ODRkY2Zi/ZmY0ZWQxYWQuanBl/Zw"
+                  alt=""
+                />
+                <h4 class="title">Run it up</h4>
+                <p class="artist">Hanuman kind</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273e62ca3548e739bd85eebbbc9"
+                  alt=""
+                />
+                <h4 class="title">G.O.A.T.</h4>
+                <p class="artist">Diljit Dosanjh</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273b54cdfbfaa828674ffecd12c"
+                  alt=""
+                />
+                <h4 class="title">Illuminati (From "Aavesham")</h4>
+                <p class="artist">Sushin Shyam, Dabzee, Vinayak Sasikumar</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b2734c30b2c8eaa6ed1b01c518a6"
+                  alt=""
+                />
+                <h4 class="title">Nacho Nacho (hindi)</h4>
+                <p class="artist">Subham</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84953e8c33d65d4db274cafca1"
+                  alt=""
+                />
+                <h4 class="title">Humare Sath Shri Raghunath...</h4>
+                <p class="artist">Pujya Prembhushanji Maharaj</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
           </div>
-          <div class="card-display-con">
-            <div class="card">
-              <img
-                src="https://imgs.search.brave.com/Cppt5prILDFj1RIuKFRJ0dA4sv0ifWkeGItyCnvIA1k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9uZW9u/bXVzaWMub25saW5l/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzAzL2FiNjc2MTZk/MDAwMGIyNzM4NmVi/NjFiZTU3ODRkY2Zi/ZmY0ZWQxYWQuanBl/Zw"
-                alt=""
-              />
-              <h4 class="title">Run it up</h4>
-              <p class="artist">Hanuman kind</p>
-              <i class="fa-solid fa-play"></i>
+          <div class="card-container">
+            <div class="cardhead">
+              <h2>Artists</h2>
+              <span>Show all</span>
             </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab67616d0000b273e62ca3548e739bd85eebbbc9"
-                alt=""
-              />
-              <h4 class="title">G.O.A.T.</h4>
-              <p class="artist">Diljit Dosanjh</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab67616d0000b273b54cdfbfaa828674ffecd12c"
-                alt=""
-              />
-              <h4 class="title">Illuminati (From "Aavesham")</h4>
-              <p class="artist">Sushin Shyam, Dabzee, Vinayak Sasikumar</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab67616d0000b2734c30b2c8eaa6ed1b01c518a6"
-                alt=""
-              />
-              <h4 class="title">Nacho Nacho (hindi)</h4>
-              <p class="artist">Subham</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84953e8c33d65d4db274cafca1"
-                alt=""
-              />
-              <h4 class="title">Humare Sath Shri Raghunath...</h4>
-              <p class="artist">Pujya Prembhushanji Maharaj</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="cardhead">
-            <h2>Artists</h2>
-            <span>Show all</span>
-          </div>
-          <div class="card-display-con">
-            <div class="card artist-card">
-              <img
-                class="circleImg"
-                src="https://i.scdn.co/image/ab67656300005f1ffdf18dfbe4cebaf6b7d22bcf"
-                alt=""
-              />
-              <h4 class="title">Premanand Maharaj Ji</h4>
-              <p class="artist">Artist</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
+            <div class="card-display-con">
+              <div class="card artist-card">
+                <img
+                  class="circleImg"
+                  src="https://i.scdn.co/image/ab67656300005f1ffdf18dfbe4cebaf6b7d22bcf"
+                  alt=""
+                />
+                <h4 class="title">Premanand Maharaj Ji</h4>
+                <p class="artist">Artist</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
 
-            <div class="card artist-card">
-              <img
-                class="circleImg"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThIqC8Cn7zVhol6yaI1Z9cWAQytz4D4GIKow&s"
-                alt=""
-              />
-              <h4 class="title">Indresh Upadhyay</h4>
-              <p class="artist">Artist</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card artist-card">
-              <img
-                class="circleImg"
-                src=" https://i.scdn.co/image/ab6761610000e5eb577fa22551df098e7028ce54"
-                alt=""
-              />
-              <h4 class="title">Pujya Prembhushanji Maharaj</h4>
-              <p class="artist">Artist</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
+              <div class="card artist-card">
+                <img
+                  class="circleImg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThIqC8Cn7zVhol6yaI1Z9cWAQytz4D4GIKow&s"
+                  alt=""
+                />
+                <h4 class="title">Indresh Upadhyay</h4>
+                <p class="artist">Artist</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card artist-card">
+                <img
+                  class="circleImg"
+                  src=" https://i.scdn.co/image/ab6761610000e5eb577fa22551df098e7028ce54"
+                  alt=""
+                />
+                <h4 class="title">Pujya Prembhushanji Maharaj</h4>
+                <p class="artist">Artist</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
 
-            <div class="card artist-card">
-              <img
-                class="circleImg"
-                src="https://i.scdn.co/image/ab6761610000e5eb2f0fac98cd33bf8f0d541f22"
-                alt=""
-              />
-              <h4 class="title">Jaya Kishori</h4>
-              <p class="artist">Artist</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card artist-card">
-              <img
-                class="circleImg"
-                src="https://i.scdn.co/image/ab6761610000e5eb8cfb5a512e10167902f9c985"
-                alt=""
-              />
-              <h4 class="title">Ranjan Ji Maharaj</h4>
-              <p class="artist">Artist</p>
-              <i class="fa-solid fa-play"></i>
+              <div class="card artist-card">
+                <img
+                  class="circleImg"
+                  src="https://i.scdn.co/image/ab6761610000e5eb2f0fac98cd33bf8f0d541f22"
+                  alt=""
+                />
+                <h4 class="title">Jaya Kishori</h4>
+                <p class="artist">Artist</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card artist-card">
+                <img
+                  class="circleImg"
+                  src="https://i.scdn.co/image/ab6761610000e5eb8cfb5a512e10167902f9c985"
+                  alt=""
+                />
+                <h4 class="title">Ranjan Ji Maharaj</h4>
+                <p class="artist">Artist</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card-container">
-          <div class="cardhead">
-            <h2>Podcasts</h2>
-            <span>Show all</span>
-          </div>
-          <div class="card-display-con">
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab6765630000ba8af1673ed0ad264b0914cf3f7d"
-                alt=""
-              />
-              <h4 class="title">Bhagavad Gita (Hindi)</h4>
-              <p class="artist">Swami Adgadanand</p>
-              <i class="fa-solid fa-play"></i>
+          <div class="card-container">
+            <div class="cardhead">
+              <h2>Podcasts</h2>
+              <span>Show all</span>
             </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab67656300005f1f1cafa02f81a9891c432f2563"
-                alt=""
-              />
-              <h4 class="title">ChanaKya Neeti (Hindi)</h4>
-              <p class="artist">Vishal S</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab6765630000ba8a9114d741247e2d26a7b48b6f"
-                alt=""
-              />
-              <h4 class="title">Shri Krishna Leela (Hindi)</h4>
-              <p class="artist">Spotify Studios</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
+            <div class="card-display-con">
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab6765630000ba8af1673ed0ad264b0914cf3f7d"
+                  alt=""
+                />
+                <h4 class="title">Bhagavad Gita (Hindi)</h4>
+                <p class="artist">Swami Adgadanand</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67656300005f1f1cafa02f81a9891c432f2563"
+                  alt=""
+                />
+                <h4 class="title">ChanaKya Neeti (Hindi)</h4>
+                <p class="artist">Vishal S</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab6765630000ba8a9114d741247e2d26a7b48b6f"
+                  alt=""
+                />
+                <h4 class="title">Shri Krishna Leela (Hindi)</h4>
+                <p class="artist">Spotify Studios</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
 
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab6765630000ba8afbd56faf6af7164251351b89"
-                alt=""
-              />
-              <h4 class="title">Shivaji Maharaj Hindi Biography</h4>
-              <p class="artist">Aditya Davane</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab6765630000ba8aaa4830256e4b613f07287208"
-                alt=""
-              />
-              <h4 class="title">Huberman Lab</h4>
-              <p class="artist">Scicomm Media</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="cardhead">
-            <h2>India's Best</h2>
-            <span>Show all</span>
-          </div>
-          <div class="card-display-con">
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab67706f00000002ed673514217fd73bce0a9cfa"
-                alt=""
-              />
-              <h4 class="title"></h4>
-              <p class="artist">India's Rap Scene. Cover-Hanumankind</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab67706f00000002bcb525d7246c9f9b896cba79"
-                alt=""
-              />
-              <h4 class="title"></h4>
-              <p class="artist">
-                Most exciting artists from the indian indie...
-              </p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab67706f00000002e2881c83b28f451044b0b8f7"
-                alt=""
-              />
-              <h4 class="title"></h4>
-              <p class="artist">Finest collection of Malayalam Music from...</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab67706f0000000230834c947fa18b16eabe2451"
-                alt=""
-              />
-              <h4 class="title">Top Artists 2024 India</h4>
-              <p class="artist">By Spotify</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab67706f00000002e863ce9df6955fed82d56257"
-                alt=""
-              />
-              <h4 class="title"></h4>
-              <p class="artist">Hottest tracks from your favourite I-Pop...</p>
-              <i class="fa-solid fa-play"></i>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab6765630000ba8afbd56faf6af7164251351b89"
+                  alt=""
+                />
+                <h4 class="title">Shivaji Maharaj Hindi Biography</h4>
+                <p class="artist">Aditya Davane</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab6765630000ba8aaa4830256e4b613f07287208"
+                  alt=""
+                />
+                <h4 class="title">Huberman Lab</h4>
+                <p class="artist">Scicomm Media</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card-container">
-          <div class="cardhead">
-            <h2>Profiles</h2>
-            <span>Show all</span>
-          </div>
-          <div class="card-display-con">
-            <div class="card artist-card">
-              <img
-                class="circleImg"
-                src="https://i.scdn.co/image/ab6761610000e5ebc58e9665446297c3be1a0ae0"
-                alt=""
-              />
-              <h4 class="title">Jubin Nautiyal</h4>
-              <p class="artist">Artist</p>
-              <i class="fa-solid fa-play"></i>
+          <div class="card-container">
+            <div class="cardhead">
+              <h2>India's Best</h2>
+              <span>Show all</span>
             </div>
+            <div class="card-display-con">
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67706f00000002ed673514217fd73bce0a9cfa"
+                  alt=""
+                />
+                <h4 class="title"></h4>
+                <p class="artist">India's Rap Scene. Cover-Hanumankind</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67706f00000002bcb525d7246c9f9b896cba79"
+                  alt=""
+                />
+                <h4 class="title"></h4>
+                <p class="artist">
+                  Most exciting artists from the indian indie...
+                </p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67706f00000002e2881c83b28f451044b0b8f7"
+                  alt=""
+                />
+                <h4 class="title"></h4>
+                <p class="artist">
+                  Finest collection of Malayalam Music from...
+                </p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67706f0000000230834c947fa18b16eabe2451"
+                  alt=""
+                />
+                <h4 class="title">Top Artists 2024 India</h4>
+                <p class="artist">By Spotify</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67706f00000002e863ce9df6955fed82d56257"
+                  alt=""
+                />
+                <h4 class="title"></h4>
+                <p class="artist">
+                  Hottest tracks from your favourite I-Pop...
+                </p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="cardhead">
+              <h2>Profiles</h2>
+              <span>Show all</span>
+            </div>
+            <div class="card-display-con">
+              <div class="card artist-card">
+                <img
+                  class="circleImg"
+                  src="https://i.scdn.co/image/ab6761610000e5ebc58e9665446297c3be1a0ae0"
+                  alt=""
+                />
+                <h4 class="title">Jubin Nautiyal</h4>
+                <p class="artist">Artist</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
 
-            <div class="card artist-card">
-              <img
-                class="circleImg"
-                src="https://i.scdn.co/image/ab6761610000e5eb2feffce3170e287e2c143dc7"
-                alt=""
-              />
-              <h4 class="title">Hansraj Raghuwanshi</h4>
-              <p class="artist">Artist</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card artist-card">
-              <img
-                class="circleImg"
-                src="https://i.scdn.co/image/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7"
-                alt=""
-              />
-              <h4 class="title">Arijit Singh</h4>
-              <p class="artist">Artist</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
+              <div class="card artist-card">
+                <img
+                  class="circleImg"
+                  src="https://i.scdn.co/image/ab6761610000e5eb2feffce3170e287e2c143dc7"
+                  alt=""
+                />
+                <h4 class="title">Hansraj Raghuwanshi</h4>
+                <p class="artist">Artist</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card artist-card">
+                <img
+                  class="circleImg"
+                  src="https://i.scdn.co/image/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7"
+                  alt=""
+                />
+                <h4 class="title">Arijit Singh</h4>
+                <p class="artist">Artist</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
 
-            <div class="card artist-card">
-              <img
-                class="circleImg"
-                src="https://i.scdn.co/image/ab6761610000e5ebd9c8ce8fd9ceffeaf2359c73"
-                alt=""
-              />
-              <h4 class="title">Govind Krsna Das</h4>
-              <p class="artist">Artist</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card artist-card">
-              <img
-                class="circleImg"
-                src="https://i.scdn.co/image/ab6761610000e5eb7c474bb1f8825ab0376ec962"
-                alt=""
-              />
-              <h4 class="title">Dhruv Sharma</h4>
-              <p class="artist">Artist</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="cardhead">
-            <h2>Episodes</h2>
-            <span>Show all</span>
-          </div>
-          <div class="card-display-con">
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab6765630000ba8a53fc4bdcac986eb22ed9f1bf"
-                alt=""
-              />
-              <h4 class="title">Atomic Habits Full Audio Book...</h4>
-              <p class="artist">Oct2024. 334 min</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab6765630000ba8a0d90fa05941a248411801f96"
-                alt=""
-              />
-              <h4 class="title">IKIGAI || Audiobook</h4>
-              <p class="artist">Self Improvement Audio Book</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab6765630000ba8ae901d9be891cecd4c16af890"
-                alt=""
-              />
-              <h4 class="title">The 48 Laws of Power by Robert Greene</h4>
-              <p class="artist">Aug 5,2024 .32 min</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV1x86GMhEYMBgK89AVBSDBzBursCWfPZF2Q&s"
-                alt=""
-              />
-              <h4 class="title">
-                The Power of your Subconscious Mind by joseph Murphy
-              </h4>
-              <p class="artist">(Full Audiobook)</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThRglXTg5y-GTwpj6kSEBj3Kzov46Orzygpg&s"
-                alt=""
-              />
-              <h4 class="title">Boost Your Aura Attract Positive Energ...</h4>
-              <p class="artist">By Good Vibes</p>
-              <i class="fa-solid fa-play"></i>
+              <div class="card artist-card">
+                <img
+                  class="circleImg"
+                  src="https://i.scdn.co/image/ab6761610000e5ebd9c8ce8fd9ceffeaf2359c73"
+                  alt=""
+                />
+                <h4 class="title">Govind Krsna Das</h4>
+                <p class="artist">Artist</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card artist-card">
+                <img
+                  class="circleImg"
+                  src="https://i.scdn.co/image/ab6761610000e5eb7c474bb1f8825ab0376ec962"
+                  alt=""
+                />
+                <h4 class="title">Dhruv Sharma</h4>
+                <p class="artist">Artist</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card-container">
-          <div class="cardhead">
-            <h2>Albums</h2>
-            <span>Show all</span>
+          <div class="card-container">
+            <div class="cardhead">
+              <h2>Episodes</h2>
+              <span>Show all</span>
+            </div>
+            <div class="card-display-con">
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab6765630000ba8a53fc4bdcac986eb22ed9f1bf"
+                  alt=""
+                />
+                <h4 class="title">Atomic Habits Full Audio Book...</h4>
+                <p class="artist">Oct2024. 334 min</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab6765630000ba8a0d90fa05941a248411801f96"
+                  alt=""
+                />
+                <h4 class="title">IKIGAI || Audiobook</h4>
+                <p class="artist">Self Improvement Audio Book</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab6765630000ba8ae901d9be891cecd4c16af890"
+                  alt=""
+                />
+                <h4 class="title">The 48 Laws of Power by Robert Greene</h4>
+                <p class="artist">Aug 5,2024 .32 min</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV1x86GMhEYMBgK89AVBSDBzBursCWfPZF2Q&s"
+                  alt=""
+                />
+                <h4 class="title">
+                  The Power of your Subconscious Mind by joseph Murphy
+                </h4>
+                <p class="artist">(Full Audiobook)</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThRglXTg5y-GTwpj6kSEBj3Kzov46Orzygpg&s"
+                  alt=""
+                />
+                <h4 class="title">Boost Your Aura Attract Positive Energ...</h4>
+                <p class="artist">By Good Vibes</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
           </div>
-          <div class="card-display-con">
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab67616d0000b273fefe60056152d709eb3a7c69"
-                alt=""
-              />
-              <h4 class="title">Top Devotional Songs</h4>
-              <p class="artist">2025.Various Artists</p>
-              <i class="fa-solid fa-play"></i>
+          <div class="card-container">
+            <div class="cardhead">
+              <h2>Albums</h2>
+              <span>Show all</span>
             </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab67616d00001e0206509c48845cd613c26c1c2f"
-                alt=""
-              />
-              <h4 class="title">Krishnaya Vasudevaya</h4>
-              <p class="artist">2024. Meditative india Devotional</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsstZMsuy9UZeGgThm0OQlax6Hr1WoRt6d9w&s"
-                alt=""
-              />
-              <h4 class="title">2024 Diwali Music:Puja</h4>
-              <p class="artist">2024. India Tribe Music...</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
+            <div class="card-display-con">
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273fefe60056152d709eb3a7c69"
+                  alt=""
+                />
+                <h4 class="title">Top Devotional Songs</h4>
+                <p class="artist">2025.Various Artists</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d00001e0206509c48845cd613c26c1c2f"
+                  alt=""
+                />
+                <h4 class="title">Krishnaya Vasudevaya</h4>
+                <p class="artist">2024. Meditative india Devotional</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsstZMsuy9UZeGgThm0OQlax6Hr1WoRt6d9w&s"
+                  alt=""
+                />
+                <h4 class="title">2024 Diwali Music:Puja</h4>
+                <p class="artist">2024. India Tribe Music...</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
 
-            <div class="card">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlL8MfoqU8E1-PM7QS2n7_3ant7UkVKPX6xA&s"
-                alt=""
-              />
-              <h4 class="title">Chamundeshwari popular</h4>
-              <p class="artist">2018. Various Artists</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4v6mWh3BPIIUjXryeErCvcJM7Uaiy4rrvrA&s"
-                alt=""
-              />
-              <h4 class="title">Pashupati Ashtakam</h4>
-              <p class="artist">2024. Religious India</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="cardhead">
-            <h2>Playlists</h2>
-            <span>Show all</span>
-          </div>
-          <div class="card-display-con">
-            <div class="card">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4-8sMy-8Rs8k9K6RLQYh7uayc2IO5YFH4Fw&s"
-                alt=""
-              />
-              <h4 class="title"></h4>
-              <p class="artist">
-                Your daily update of the most played tracks right...
-              </p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
-                alt=""
-              />
-              <h4 class="title"></h4>
-              <p class="artist">
-                Your daily update of the most played tracks right...
-              </p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBod3uHSH2nWqH4fYU7Hox48Kjwg_-0NcxHw&s"
-                alt=""
-              />
-              <h4 class="title">Viral 50-India</h4>
-              <p class="artist">By Spotify</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_es_default.jpg"
-                alt=""
-              />
-              <h4 class="title">Top 50-Spain</h4>
-              <p class="artist">By Spotify</p>
-              <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="card">
-              <img
-                src="https://i.scdn.co/image/ab67616d0000b273a7ad9c2f47e1be63277d0e9c"
-                alt=""
-              />
-              <h4 class="title">Latino top 50</h4>
-              <p class="artist">By Spotify</p>
-              <i class="fa-solid fa-play"></i>
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlL8MfoqU8E1-PM7QS2n7_3ant7UkVKPX6xA&s"
+                  alt=""
+                />
+                <h4 class="title">Chamundeshwari popular</h4>
+                <p class="artist">2018. Various Artists</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4v6mWh3BPIIUjXryeErCvcJM7Uaiy4rrvrA&s"
+                  alt=""
+                />
+                <h4 class="title">Pashupati Ashtakam</h4>
+                <p class="artist">2024. Religious India</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="card-container">
+            <div class="cardhead">
+              <h2>Playlists</h2>
+              <span>Show all</span>
+            </div>
+            <div class="card-display-con">
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4-8sMy-8Rs8k9K6RLQYh7uayc2IO5YFH4Fw&s"
+                  alt=""
+                />
+                <h4 class="title"></h4>
+                <p class="artist">
+                  Your daily update of the most played tracks right...
+                </p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                  alt=""
+                />
+                <h4 class="title"></h4>
+                <p class="artist">
+                  Your daily update of the most played tracks right...
+                </p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBod3uHSH2nWqH4fYU7Hox48Kjwg_-0NcxHw&s"
+                  alt=""
+                />
+                <h4 class="title">Viral 50-India</h4>
+                <p class="artist">By Spotify</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_es_default.jpg"
+                  alt=""
+                />
+                <h4 class="title">Top 50-Spain</h4>
+                <p class="artist">By Spotify</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273a7ad9c2f47e1be63277d0e9c"
+                  alt=""
+                />
+                <h4 class="title">Latino top 50</h4>
+                <p class="artist">By Spotify</p>
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </main>
         <footer>
           <div class="footer-con">
             <ul>
@@ -639,6 +656,6 @@
         </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
-  <script src="app.js"></script>
 </html>

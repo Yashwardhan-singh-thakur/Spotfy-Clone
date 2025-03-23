@@ -2,7 +2,7 @@ let main = document.querySelector(".main");
 let searchInput = document.querySelector(".search-con");
 let hiddenBtns = document.querySelectorAll(".search-con button");
 let expandBtn = document.querySelector(".fa-bars ");
-let expandableBar = document.querySelector(".expandBar");
+let expandableBar = document.querySelector(".slider-expandBar");
 let contractBtn = document.querySelector(".fa-x");
 let navBar = document.querySelector("nav");
 
